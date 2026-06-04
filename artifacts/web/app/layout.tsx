@@ -12,6 +12,7 @@ import { LiveTicker } from "@/components/ui/live-ticker";
 import { TickerProvider } from "@/lib/ticker-context";
 import { BottomNav } from "@/components/layout/bottom-nav";
 import { CursorSpotlight } from "@/components/ui/cursor-spotlight";
+import { ClerkBannerRemover } from "@/components/ui/clerk-banner-remover";
 
 export const metadata: Metadata = {
   title: "EliteLobby — Esports Tournament Platform",
@@ -35,6 +36,13 @@ export default function RootLayout({
       signUpUrl="/auth/signup"
       signInFallbackRedirectUrl="/dashboard"
       signUpFallbackRedirectUrl="/profile-setup"
+      appearance={{
+        elements: {
+          developmentModeContainer: { display: "none" },
+          developmentModePopoverTrigger: { display: "none" },
+          developmentModePopoverCard: { display: "none" },
+        },
+      }}
     >
       <html lang="en" suppressHydrationWarning>
         <body className="font-body antialiased">
@@ -53,6 +61,7 @@ export default function RootLayout({
                 <BottomNav />
                 <NotificationToastContainer />
                 <WhatsAppButton />
+                <ClerkBannerRemover />
                 </TickerProvider>
               </RoomIdProvider>
             </WalletProvider>

@@ -831,3 +831,18 @@ a, button {
 .rank-diamond { color: #60a5fa; border-color: rgba(96, 165, 250, 0.4); background: rgba(96, 165, 250, 0.1); }
 .rank-master { color: #a855f7; border-color: rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.1); }
 .rank-grandmaster { color: #f87171; border-color: rgba(248, 113, 113, 0.4); background: rgba(248, 113, 113, 0.1); }
+
+/* ─── Hide Clerk keyless/dev-mode "Configure your application" banner ─── */
+[class*="cl-keyless"],
+[class*="cl-Keyless"],
+[class*="cl-developmentMode"],
+[class*="cl-DevelopmentMode"],
+[class*="cl-devMode"],
+[class*="cl-DevMode"],
+[data-clerk-keyless],
+[data-clerk-development-mode-notice],
+[data-localization-key*="badge__sandboxMode"],
+[data-localization-key*="badge__devMode"],
+[data-localization-key*="keyless"] {
+  display: none !important;
+}

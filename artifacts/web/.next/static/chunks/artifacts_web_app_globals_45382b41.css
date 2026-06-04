@@ -7537,6 +7537,10 @@ a, button {
   border-color: rgba(248, 113, 113, .4);
 }
 
+[class*="cl-"][class*="evelopment"], [class*="cl-"][class*="evMode"], [class*="cl-"][class*="keyless"], [class*="cl-"][class*="Keyless"], [data-clerk-development-mode-notice], [data-localization-key*="badge__sandboxMode"], [data-localization-key*="badge__devMode"] {
+  display: none !important;
+}
+
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;

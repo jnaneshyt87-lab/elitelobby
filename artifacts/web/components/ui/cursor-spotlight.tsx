@@ -1,42 +1,65 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export function CursorSpotlight() {
-  const outerRef = useRef<HTMLDivElement>(null);
-  const innerRef = useRef<HTMLDivElement>(null);
-  const [active, setActive] = useState(false);
+  const ringRef = useRef<HTMLDivElement>(null);
+  const dotRef = useRef<HTMLDivElement>(null);
+  const glowRef = useRef<HTMLDivElement>(null);
+  const activeRef = useRef(false);
 
   useEffect(() => {
-    // Hide on touch devices
+    if (typeof window === "undefined") return;
     if (window.matchMedia("(pointer: coarse)").matches) return;
 
-    let raf: number;
     let lx = window.innerWidth / 2;
     let ly = window.innerHeight / 2;
     let tx = lx, ty = ly;
+    let raf: number;
+
+    const setOpacity = (v: number) => {
+      if (ringRef.current) ringRef.current.style.opacity = String(v);
+      if (dotRef.current) dotRef.current.style.opacity = String(v);
+      if (glowRef.current) glowRef.current.style.opacity = String(v);
+      const overlay = document.querySelector(".cursor-reveal-overlay") as HTMLElement;
+      if (overlay) overlay.style.opacity = String(v);
+    };
 
     const onMove = (e: MouseEvent) => {
       tx = e.clientX;
       ty = e.clientY;
-      setActive(true);
 
-      // Inner dot — instant follow (GPU transform)
-      if (innerRef.current) {
-        innerRef.current.style.transform = `translate3d(${tx - 24}px,${ty - 24}px,0)`;
+      // Zero-lag: update CSS custom props on <html> for the reveal overlay
+      document.documentElement.style.setProperty("--cx", `${tx}px`);
+      document.documentElement.style.setProperty("--cy", `${ty}px`);
+
+      // Cursor ring — direct, zero lag
+      if (ringRef.current) {
+        ringRef.current.style.transform = `translate3d(${tx - 22}px,${ty - 22}px,0)`;
+      }
+      // Cursor dot — direct, zero lag
+      if (dotRef.current) {
+        dotRef.current.style.transform = `translate3d(${tx - 3}px,${ty - 3}px,0)`;
+      }
+
+      if (!activeRef.current) {
+        activeRef.current = true;
+        setOpacity(1);
       }
     };
 
-    const onLeave = () => setActive(false);
-    const onEnter = () => setActive(true);
-
     const loop = () => {
-      // Outer glow — lerp follow (lazy trailing)
-      lx += (tx - lx) * 0.07;
-      ly += (ty - ly) * 0.07;
-      if (outerRef.current) {
-        outerRef.current.style.transform = `translate3d(${lx - 350}px,${ly - 350}px,0)`;
+      // Ambient glow trails slightly (soft lerp, GPU only)
+      lx += (tx - lx) * 0.065;
+      ly += (ty - ly) * 0.065;
+      if (glowRef.current) {
+        glowRef.current.style.transform = `translate3d(${lx - 300}px,${ly - 300}px,0)`;
       }
       raf = requestAnimationFrame(loop);
+    };
+
+    const onLeave = () => { activeRef.current = false; setOpacity(0); };
+    const onEnter = () => {
+      if (tx > 0) { activeRef.current = true; setOpacity(1); }
     };
 
     window.addEventListener("mousemove", onMove, { passive: true });
@@ -54,46 +77,58 @@ export function CursorSpotlight() {
 
   return (
     <>
-      {/* Large diffuse trailing glow */}
+      {/* Ambient trailing glow — soft lerp */}
       <div
-        ref={outerRef}
+        ref={glowRef}
         aria-hidden="true"
         style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: 700,
-          height: 700,
+          position: "fixed", top: 0, left: 0,
+          width: 600, height: 600,
           borderRadius: "50%",
           background:
-            "radial-gradient(circle, rgba(124,58,237,0.07) 0%, rgba(6,182,212,0.04) 35%, transparent 65%)",
+            "radial-gradient(circle, rgba(124,58,237,0.11) 0%, rgba(6,182,212,0.06) 40%, transparent 70%)",
           pointerEvents: "none",
-          zIndex: 2,
+          zIndex: 3,
           willChange: "transform",
-          opacity: active ? 1 : 0,
-          transition: "opacity 0.4s ease",
+          opacity: 0,
+          transition: "opacity 0.5s ease",
         }}
       />
 
-      {/* Small sharp cursor halo — direct follow */}
+      {/* Neon cursor ring — zero lag direct follow */}
       <div
-        ref={innerRef}
+        ref={ringRef}
         aria-hidden="true"
         style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: 48,
-          height: 48,
+          position: "fixed", top: 0, left: 0,
+          width: 44, height: 44,
           borderRadius: "50%",
-          background:
-            "radial-gradient(circle, rgba(168,85,247,0.35) 0%, transparent 70%)",
+          border: "1.5px solid rgba(168,85,247,0.75)",
+          boxShadow:
+            "0 0 12px rgba(124,58,237,0.55), 0 0 24px rgba(124,58,237,0.2), inset 0 0 8px rgba(6,182,212,0.15)",
           pointerEvents: "none",
-          zIndex: 2,
+          zIndex: 9999,
           willChange: "transform",
-          opacity: active ? 1 : 0,
-          transition: "opacity 0.3s ease",
-          mixBlendMode: "screen",
+          opacity: 0,
+          transition: "opacity 0.35s ease",
+        }}
+      />
+
+      {/* Cursor dot — zero lag direct follow */}
+      <div
+        ref={dotRef}
+        aria-hidden="true"
+        style={{
+          position: "fixed", top: 0, left: 0,
+          width: 6, height: 6,
+          borderRadius: "50%",
+          background: "rgba(168,85,247,0.95)",
+          boxShadow: "0 0 8px rgba(168,85,247,0.9)",
+          pointerEvents: "none",
+          zIndex: 10000,
+          willChange: "transform",
+          opacity: 0,
+          transition: "opacity 0.35s ease",
         }}
       />
     </>

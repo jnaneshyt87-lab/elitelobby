@@ -730,30 +730,147 @@ function PlayersToWatch() {
 }
 
 function RecentWinners() {
+  const [activeIdx, setActiveIdx] = useState(0);
+  const winners = MOCK_RECENT_WINNERS;
+
+  useEffect(() => {
+    const t = setInterval(() => setActiveIdx((i) => (i + 1) % winners.length), 2800);
+    return () => clearInterval(t);
+  }, [winners.length]);
+
+  const AVATARS = ["from-yellow-500 to-orange-600", "from-purple-600 to-pink-600", "from-cyan-500 to-blue-600", "from-green-500 to-emerald-700"];
+
   return (
-    <section className="py-16 px-4">
+    <section className="py-16 px-4 relative overflow-hidden">
+      {/* Radial gold glow */}
+      <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 60% 40% at 50% 50%, rgba(245,158,11,0.05) 0%, transparent 70%)" }} />
+
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-8">
-          <p className="font-heading text-sm text-red-400 tracking-widest uppercase mb-1">Latest Results</p>
+        <div className="text-center mb-10">
+          <p className="font-heading text-sm text-yellow-400 tracking-widest uppercase mb-1">Hall of Champions</p>
           <h2 className="font-display font-bold text-2xl md:text-3xl text-white">
             RECENT <span className="gradient-text-fire">WINNERS</span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-          {MOCK_RECENT_WINNERS.map((winner, i) => (
+
+        {/* Desktop: carousel spotlight + side list */}
+        <div className="hidden md:grid md:grid-cols-5 gap-6">
+          {/* Main winner spotlight */}
+          <div className="md:col-span-3">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={activeIdx}
+                initial={{ opacity: 0, y: 20, scale: 0.97 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: -20, scale: 0.97 }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
+                className="glass-card rounded-2xl p-8 text-center relative overflow-hidden border border-yellow-500/20"
+                style={{ animation: "winner-glow-pulse 3s ease-in-out infinite" }}
+              >
+                {/* Background gold glow */}
+                <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 30%, rgba(245,158,11,0.08) 0%, transparent 70%)" }} />
+
+                {/* Confetti dots */}
+                {[...Array(6)].map((_, i) => (
+                  <div
+                    key={i}
+                    className="absolute w-1.5 h-1.5 rounded-full pointer-events-none"
+                    style={{
+                      left: `${15 + i * 14}%`,
+                      top: "10%",
+                      background: ["#f59e0b","#06b6d4","#a855f7","#ef4444","#22c55e","#f97316"][i],
+                      animation: `confetti-fall ${1.5 + i * 0.3}s ease-in ${i * 0.4}s infinite`,
+                      opacity: 0.7,
+                    }}
+                  />
+                ))}
+
+                {/* Trophy */}
+                <div className="relative z-10 mb-4">
+                  <div
+                    className="text-6xl inline-block"
+                    style={{ animation: "trophy-bounce 2.5s ease-in-out infinite" }}
+                  >
+                    🏆
+                  </div>
+                </div>
+
+                {/* Avatar */}
+                <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${AVATARS[activeIdx % AVATARS.length]} flex items-center justify-center font-display font-black text-3xl text-white mx-auto mb-4 relative z-10`}
+                  style={{ boxShadow: "0 0 30px rgba(245,158,11,0.4)" }}
+                >
+                  {winners[activeIdx].username[0]}
+                </div>
+
+                <h3 className="font-display font-black text-2xl text-white mb-1 relative z-10">{winners[activeIdx].username}</h3>
+                <p className="text-slate-400 text-sm font-heading mb-4 relative z-10">{winners[activeIdx].tournament}</p>
+
+                <div className="relative z-10">
+                  <p className="shimmer-text font-display font-black text-3xl mb-1">{formatCurrency(winners[activeIdx].prize)}</p>
+                  <span className="inline-flex items-center gap-1.5 bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 font-heading font-bold text-xs tracking-wider px-3 py-1 rounded-full">
+                    <Crown className="w-3.5 h-3.5" /> 1ST PLACE
+                  </span>
+                </div>
+
+                {/* Dot progress */}
+                <div className="flex justify-center gap-1.5 mt-6 relative z-10">
+                  {winners.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setActiveIdx(i)}
+                      className={cn("rounded-full transition-all duration-300", i === activeIdx ? "w-5 h-1.5 bg-yellow-400" : "w-1.5 h-1.5 bg-white/20")}
+                    />
+                  ))}
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+
+          {/* Side list */}
+          <div className="md:col-span-2 flex flex-col gap-2 justify-center">
+            {winners.map((w, i) => (
+              <motion.button
+                key={i}
+                onClick={() => setActiveIdx(i)}
+                whileHover={{ x: 5 }}
+                className={cn(
+                  "flex items-center gap-3 rounded-xl px-4 py-3 text-left transition-all border",
+                  i === activeIdx
+                    ? "glass border-yellow-500/35 bg-yellow-500/8"
+                    : "border-white/5 bg-white/3 hover:bg-white/5 hover:border-white/10"
+                )}
+              >
+                <div className={cn("w-9 h-9 rounded-lg flex items-center justify-center font-display font-black text-sm text-white shrink-0 bg-gradient-to-br", AVATARS[i % AVATARS.length])}>
+                  {w.username[0]}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className={cn("font-heading font-semibold text-sm truncate", i === activeIdx ? "text-white" : "text-slate-300")}>{w.username}</p>
+                  <p className="text-slate-500 text-xs truncate">{w.tournament}</p>
+                </div>
+                <p className={cn("font-display text-xs font-bold shrink-0", i === activeIdx ? "text-yellow-400" : "text-slate-400")}>{formatCurrency(w.prize)}</p>
+              </motion.button>
+            ))}
+          </div>
+        </div>
+
+        {/* Mobile: stacked cards */}
+        <div className="md:hidden grid grid-cols-2 gap-3">
+          {winners.map((winner, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, scale: 0.95 }}
+              initial={{ opacity: 0, scale: 0.92 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="glass-card rounded-xl p-5 text-center"
+              transition={{ delay: i * 0.08 }}
+              className={cn(
+                "glass-card rounded-xl p-4 text-center border",
+                i === 0 ? "border-yellow-500/30" : "border-white/8"
+              )}
             >
-              <div className="text-3xl mb-2">👑</div>
-              <div className="font-display font-bold text-base text-white mb-1">{winner.username}</div>
-              <div className="text-xs text-slate-400 mb-3 font-heading">{winner.tournament}</div>
-              <div className="font-display font-black text-xl gradient-text-gold">{formatCurrency(winner.prize)}</div>
-              <div className="text-xs text-yellow-400 font-heading mt-1">1st Place</div>
+              <div className="text-2xl mb-2">{i === 0 ? "🏆" : i === 1 ? "🥈" : i === 2 ? "🥉" : "🎮"}</div>
+              <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${AVATARS[i % AVATARS.length]} flex items-center justify-center font-display font-bold text-sm text-white mx-auto mb-2`}>{winner.username[0]}</div>
+              <p className="font-heading font-bold text-white text-xs mb-1 truncate">{winner.username}</p>
+              <p className="font-display font-black text-sm gradient-text-gold">{formatCurrency(winner.prize)}</p>
             </motion.div>
           ))}
         </div>
@@ -839,18 +956,31 @@ function DiscordCTA() {
   );
 }
 
+function SectionDivider() {
+  return <div className="section-divider mx-4 sm:mx-8" />;
+}
+
 export default function HomePage() {
   return (
     <>
       <HeroSection />
+      <SectionDivider />
       <StatsSection />
+      <SectionDivider />
       <GamesSection />
+      <SectionDivider />
       <FeaturedTournaments />
+      <SectionDivider />
       <HowItWorks />
+      <SectionDivider />
       <TopPlayers />
+      <SectionDivider />
       <PlayersToWatch />
+      <SectionDivider />
       <RecentWinners />
+      <SectionDivider />
       <Testimonials />
+      <SectionDivider />
       <DiscordCTA />
     </>
   );

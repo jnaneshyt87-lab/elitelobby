@@ -162,3 +162,8 @@ overrides:
   js-cookie: ">=3.0.7"
   qs: ">=6.15.2"
   postcss: ">=8.5.1"
+
+allowBuilds:
+  '@clerk/shared': true
+  esbuild: true
+  sharp: true

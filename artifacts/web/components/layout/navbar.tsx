@@ -29,6 +29,7 @@ export function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const { user, isLoaded, isSignedIn } = useUser();
+
   const { signOut } = useClerk();
   const NAV_LINKS = isSignedIn ? AUTH_NAV_LINKS : PUBLIC_NAV_LINKS;
 

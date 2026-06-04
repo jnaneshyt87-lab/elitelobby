@@ -10,6 +10,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import { LiveTicker } from "@/components/ui/live-ticker";
 import { TickerProvider } from "@/lib/ticker-context";
+import { BottomNav } from "@/components/layout/bottom-nav";
 
 export const metadata: Metadata = {
   title: "EliteLobby — Esports Tournament Platform",
@@ -43,10 +44,11 @@ export default function RootLayout({
                 <div className="grid-bg" />
                 <LiveTicker />
                 <Navbar />
-                <main className="relative z-10 min-h-screen">
+                <main className="relative z-10 min-h-screen pb-16 md:pb-0">
                   {children}
                 </main>
                 <Footer />
+                <BottomNav />
                 <NotificationToastContainer />
                 <WhatsAppButton />
                 </TickerProvider>

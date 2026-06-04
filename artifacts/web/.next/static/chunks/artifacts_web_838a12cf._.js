@@ -69,7 +69,7 @@ function TournamentCard(param) {
             duration: 0.4,
             delay: index * 0.08
         },
-        className: "glass-card rounded-xl overflow-hidden group cursor-pointer",
+        className: "glass-card card-fire rounded-xl overflow-hidden group cursor-pointer",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$web$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("relative h-28 bg-gradient-to-br overflow-hidden", (_GAME_COLORS_tournament_game = GAME_COLORS[tournament.game]) !== null && _GAME_COLORS_tournament_game !== void 0 ? _GAME_COLORS_tournament_game : "from-purple-900/40 to-indigo-900/30"),

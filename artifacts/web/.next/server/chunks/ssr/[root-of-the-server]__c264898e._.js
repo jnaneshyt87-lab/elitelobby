@@ -3142,46 +3142,42 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 ;
 ;
 function CursorSpotlight() {
+    const spotlightRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const ringRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const dotRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const glowRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const activeRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(false);
+    const shown = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if ("TURBOPACK compile-time truthy", 1) return;
         //TURBOPACK unreachable
         ;
-        let lx;
-        let ly;
         let tx, ty;
-        let raf;
-        const setOpacity = undefined;
+        const show = undefined;
         const onMove = undefined;
-        const loop = undefined;
         const onLeave = undefined;
-        const onEnter = undefined;
     }, []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                ref: glowRef,
+                ref: spotlightRef,
                 "aria-hidden": "true",
                 style: {
                     position: "fixed",
                     top: 0,
                     left: 0,
-                    width: 600,
-                    height: 600,
+                    width: 500,
+                    height: 500,
                     borderRadius: "50%",
-                    background: "radial-gradient(circle, rgba(124,58,237,0.11) 0%, rgba(6,182,212,0.06) 40%, transparent 70%)",
+                    background: "radial-gradient(circle, rgba(124,58,237,0.11) 0%, rgba(6,182,212,0.05) 45%, transparent 70%)",
                     pointerEvents: "none",
-                    zIndex: 3,
+                    zIndex: 2,
                     willChange: "transform",
                     opacity: 0,
-                    transition: "opacity 0.5s ease"
+                    transition: "opacity 0.4s ease",
+                    transform: "translate3d(-9999px,-9999px,0)"
                 }
             }, void 0, false, {
                 fileName: "[project]/artifacts/web/components/ui/cursor-spotlight.tsx",
-                lineNumber: 81,
+                lineNumber: 66,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3194,17 +3190,18 @@ function CursorSpotlight() {
                     width: 44,
                     height: 44,
                     borderRadius: "50%",
-                    border: "1.5px solid rgba(168,85,247,0.75)",
-                    boxShadow: "0 0 12px rgba(124,58,237,0.55), 0 0 24px rgba(124,58,237,0.2), inset 0 0 8px rgba(6,182,212,0.15)",
+                    border: "1.5px solid rgba(168,85,247,0.7)",
+                    boxShadow: "0 0 10px rgba(124,58,237,0.45), inset 0 0 6px rgba(6,182,212,0.1)",
                     pointerEvents: "none",
                     zIndex: 9999,
                     willChange: "transform",
                     opacity: 0,
-                    transition: "opacity 0.35s ease"
+                    transition: "opacity 0.3s ease",
+                    transform: "translate3d(-9999px,-9999px,0)"
                 }
             }, void 0, false, {
                 fileName: "[project]/artifacts/web/components/ui/cursor-spotlight.tsx",
-                lineNumber: 99,
+                lineNumber: 85,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3217,17 +3214,18 @@ function CursorSpotlight() {
                     width: 6,
                     height: 6,
                     borderRadius: "50%",
-                    background: "rgba(168,85,247,0.95)",
-                    boxShadow: "0 0 8px rgba(168,85,247,0.9)",
+                    background: "rgba(168,85,247,0.9)",
+                    boxShadow: "0 0 6px rgba(168,85,247,0.8)",
                     pointerEvents: "none",
                     zIndex: 10000,
                     willChange: "transform",
                     opacity: 0,
-                    transition: "opacity 0.35s ease"
+                    transition: "opacity 0.3s ease",
+                    transform: "translate3d(-9999px,-9999px,0)"
                 }
             }, void 0, false, {
                 fileName: "[project]/artifacts/web/components/ui/cursor-spotlight.tsx",
-                lineNumber: 118,
+                lineNumber: 104,
                 columnNumber: 7
             }, this)
         ]
@@ -3292,132 +3290,138 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 "use client";
 ;
 ;
-const COLORS = [
-    "rgba(124,58,237,",
-    "rgba(6,182,212,",
-    "rgba(168,85,247,",
-    "rgba(34,211,238,"
+/* 12 deterministic particles — pure CSS, zero JS runtime cost */ const PARTICLES = [
+    {
+        left: "5%",
+        size: 1.8,
+        color: "rgba(124,58,237,",
+        dur: 14,
+        delay: -3,
+        opacity: 0.35
+    },
+    {
+        left: "13%",
+        size: 1.3,
+        color: "rgba(6,182,212,",
+        dur: 19,
+        delay: -8,
+        opacity: 0.25
+    },
+    {
+        left: "22%",
+        size: 2.1,
+        color: "rgba(168,85,247,",
+        dur: 12,
+        delay: -1,
+        opacity: 0.3
+    },
+    {
+        left: "31%",
+        size: 1.5,
+        color: "rgba(124,58,237,",
+        dur: 17,
+        delay: -5,
+        opacity: 0.2
+    },
+    {
+        left: "42%",
+        size: 1.2,
+        color: "rgba(6,182,212,",
+        dur: 22,
+        delay: -11,
+        opacity: 0.35
+    },
+    {
+        left: "53%",
+        size: 2.0,
+        color: "rgba(168,85,247,",
+        dur: 13,
+        delay: -4,
+        opacity: 0.25
+    },
+    {
+        left: "62%",
+        size: 1.6,
+        color: "rgba(124,58,237,",
+        dur: 18,
+        delay: -9,
+        opacity: 0.3
+    },
+    {
+        left: "71%",
+        size: 1.4,
+        color: "rgba(6,182,212,",
+        dur: 16,
+        delay: -2,
+        opacity: 0.2
+    },
+    {
+        left: "79%",
+        size: 1.9,
+        color: "rgba(168,85,247,",
+        dur: 11,
+        delay: -6,
+        opacity: 0.35
+    },
+    {
+        left: "87%",
+        size: 1.1,
+        color: "rgba(124,58,237,",
+        dur: 20,
+        delay: -13,
+        opacity: 0.25
+    },
+    {
+        left: "93%",
+        size: 2.2,
+        color: "rgba(6,182,212,",
+        dur: 15,
+        delay: -7,
+        opacity: 0.3
+    },
+    {
+        left: "98%",
+        size: 1.7,
+        color: "rgba(168,85,247,",
+        dur: 16,
+        delay: -10,
+        opacity: 0.2
+    }
 ];
-function ParticleBackground() {
-    const canvasRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const canvas = canvasRef.current;
-        if (!canvas) return;
-        const ctx = canvas.getContext("2d");
-        if (!ctx) return;
-        let W = window.innerWidth;
-        let H = window.innerHeight;
-        let raf;
-        const resize = ()=>{
-            W = canvas.width = window.innerWidth;
-            H = canvas.height = window.innerHeight;
-        };
-        resize();
-        // Particles
-        const PARTICLE_COUNT = Math.min(55, Math.floor(W * H / 22000));
-        const particles = Array.from({
-            length: PARTICLE_COUNT
-        }, ()=>({
-                x: Math.random() * W,
-                y: Math.random() * H,
-                vx: (Math.random() - 0.5) * 0.4,
-                vy: -Math.random() * 0.5 - 0.15,
-                radius: Math.random() * 1.8 + 0.5,
-                alpha: Math.random() * 0.5 + 0.1,
-                alphaDir: Math.random() > 0.5 ? 1 : -1,
-                color: COLORS[Math.floor(Math.random() * COLORS.length)]
-            }));
-        // Light streaks
-        const STREAK_COUNT = 6;
-        const streaks = Array.from({
-            length: STREAK_COUNT
-        }, ()=>({
-                x: Math.random() * W,
-                y: Math.random() * H * 0.7,
-                length: Math.random() * 180 + 80,
-                speed: Math.random() * 1.4 + 0.6,
-                angle: Math.PI / 6 + (Math.random() - 0.5) * 0.4,
-                alpha: Math.random() * 0.18 + 0.04,
-                width: Math.random() * 1.5 + 0.5,
-                color: COLORS[Math.floor(Math.random() * COLORS.length)]
-            }));
-        const draw = ()=>{
-            ctx.clearRect(0, 0, W, H);
-            // Draw light streaks
-            for (const s of streaks){
-                const dx = Math.cos(s.angle) * s.length;
-                const dy = Math.sin(s.angle) * s.length;
-                const grad = ctx.createLinearGradient(s.x, s.y, s.x + dx, s.y + dy);
-                grad.addColorStop(0, s.color + "0)");
-                grad.addColorStop(0.4, s.color + s.alpha + ")");
-                grad.addColorStop(1, s.color + "0)");
-                ctx.beginPath();
-                ctx.moveTo(s.x, s.y);
-                ctx.lineTo(s.x + dx, s.y + dy);
-                ctx.strokeStyle = grad;
-                ctx.lineWidth = s.width;
-                ctx.stroke();
-                // Move streak
-                s.x += s.speed * Math.cos(s.angle);
-                s.y += s.speed * Math.sin(s.angle);
-                if (s.x > W + 200 || s.y > H + 200) {
-                    s.x = -200 + Math.random() * 200;
-                    s.y = Math.random() * H * 0.8;
-                }
-            }
-            // Draw particles
-            for (const p of particles){
-                // Pulsing alpha
-                p.alpha += 0.004 * p.alphaDir;
-                if (p.alpha > 0.65 || p.alpha < 0.05) p.alphaDir *= -1;
-                ctx.beginPath();
-                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-                ctx.fillStyle = p.color + p.alpha + ")";
-                ctx.fill();
-                // Soft glow ring
-                const grd = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.radius * 4);
-                grd.addColorStop(0, p.color + p.alpha * 0.4 + ")");
-                grd.addColorStop(1, p.color + "0)");
-                ctx.beginPath();
-                ctx.arc(p.x, p.y, p.radius * 4, 0, Math.PI * 2);
-                ctx.fillStyle = grd;
-                ctx.fill();
-                p.x += p.vx;
-                p.y += p.vy;
-                if (p.y < -10) {
-                    p.y = H + 10;
-                    p.x = Math.random() * W;
-                }
-                if (p.x < -10) p.x = W + 10;
-                if (p.x > W + 10) p.x = -10;
-            }
-            raf = requestAnimationFrame(draw);
-        };
-        draw();
-        window.addEventListener("resize", resize, {
-            passive: true
-        });
-        return ()=>{
-            cancelAnimationFrame(raf);
-            window.removeEventListener("resize", resize);
-        };
-    }, []);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("canvas", {
-        ref: canvasRef,
+const ParticleBackground = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["memo"])(function ParticleBackground() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         "aria-hidden": "true",
         style: {
             position: "fixed",
             inset: 0,
             zIndex: 0,
             pointerEvents: "none",
-            opacity: 0.85
-        }
+            overflow: "hidden"
+        },
+        children: PARTICLES.map((p, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                style: {
+                    position: "absolute",
+                    left: p.left,
+                    bottom: 0,
+                    width: p.size,
+                    height: p.size,
+                    borderRadius: "50%",
+                    background: `${p.color}${p.opacity})`,
+                    boxShadow: `0 0 ${p.size * 2.5}px ${p.color}${p.opacity * 0.5})`,
+                    animation: `particle-rise ${p.dur}s ${p.delay}s linear infinite`,
+                    willChange: "transform, opacity"
+                }
+            }, i, false, {
+                fileName: "[project]/artifacts/web/components/ui/particle-background.tsx",
+                lineNumber: 32,
+                columnNumber: 9
+            }, this))
     }, void 0, false, {
         fileName: "[project]/artifacts/web/components/ui/particle-background.tsx",
-        lineNumber: 142,
+        lineNumber: 22,
         columnNumber: 5
     }, this);
-}
+});
 }),
 "[project]/artifacts/web/components/ui/loading-screen.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";

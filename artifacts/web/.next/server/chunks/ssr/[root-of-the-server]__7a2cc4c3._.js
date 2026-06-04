@@ -927,45 +927,52 @@ function RootLayout({ children }) {
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$web$2f$lib$2f$ticker$2d$context$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["TickerProvider"], {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "grid-bg"
+                                        style: {
+                                            position: "fixed",
+                                            inset: 0,
+                                            zIndex: -1,
+                                            backgroundImage: "url(/bg-eye.jpg)",
+                                            backgroundSize: "cover",
+                                            backgroundPosition: "center",
+                                            filter: "blur(50px) brightness(0.15) saturate(1.4)",
+                                            transform: "scale(1.1)",
+                                            pointerEvents: "none"
+                                        }
                                     }, void 0, false, {
                                         fileName: "[project]/artifacts/web/app/layout.tsx",
                                         lineNumber: 56,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "cursor-reveal-overlay",
-                                        style: {
-                                            opacity: 0
-                                        }
+                                        className: "grid-bg"
                                     }, void 0, false, {
                                         fileName: "[project]/artifacts/web/app/layout.tsx",
-                                        lineNumber: 57,
+                                        lineNumber: 67,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$web$2f$components$2f$ui$2f$particle$2d$background$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ParticleBackground"], {}, void 0, false, {
                                         fileName: "[project]/artifacts/web/app/layout.tsx",
-                                        lineNumber: 58,
+                                        lineNumber: 68,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$web$2f$components$2f$ui$2f$cursor$2d$spotlight$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CursorSpotlight"], {}, void 0, false, {
                                         fileName: "[project]/artifacts/web/app/layout.tsx",
-                                        lineNumber: 59,
+                                        lineNumber: 69,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$web$2f$components$2f$ui$2f$loading$2d$screen$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["LoadingScreen"], {}, void 0, false, {
                                         fileName: "[project]/artifacts/web/app/layout.tsx",
-                                        lineNumber: 60,
+                                        lineNumber: 70,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$web$2f$components$2f$ui$2f$live$2d$ticker$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["LiveTicker"], {}, void 0, false, {
                                         fileName: "[project]/artifacts/web/app/layout.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 71,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$web$2f$components$2f$layout$2f$navbar$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Navbar"], {}, void 0, false, {
                                         fileName: "[project]/artifacts/web/app/layout.tsx",
-                                        lineNumber: 62,
+                                        lineNumber: 72,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -973,68 +980,68 @@ function RootLayout({ children }) {
                                         children: children
                                     }, void 0, false, {
                                         fileName: "[project]/artifacts/web/app/layout.tsx",
-                                        lineNumber: 63,
+                                        lineNumber: 73,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$web$2f$components$2f$layout$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Footer"], {}, void 0, false, {
                                         fileName: "[project]/artifacts/web/app/layout.tsx",
-                                        lineNumber: 66,
+                                        lineNumber: 76,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$web$2f$components$2f$layout$2f$bottom$2d$nav$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["BottomNav"], {}, void 0, false, {
                                         fileName: "[project]/artifacts/web/app/layout.tsx",
-                                        lineNumber: 67,
+                                        lineNumber: 77,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$web$2f$components$2f$ui$2f$notification$2d$toast$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["NotificationToastContainer"], {}, void 0, false, {
                                         fileName: "[project]/artifacts/web/app/layout.tsx",
-                                        lineNumber: 68,
+                                        lineNumber: 78,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$web$2f$components$2f$ui$2f$whatsapp$2d$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["WhatsAppButton"], {}, void 0, false, {
                                         fileName: "[project]/artifacts/web/app/layout.tsx",
-                                        lineNumber: 69,
+                                        lineNumber: 79,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$5$2e$18_react$2d$dom$40$19$2e$1$2e$0_react$40$19$2e$1$2e$0_$5f$react$40$19$2e$1$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$artifacts$2f$web$2f$components$2f$ui$2f$clerk$2d$banner$2d$remover$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ClerkBannerRemover"], {}, void 0, false, {
                                         fileName: "[project]/artifacts/web/app/layout.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 80,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/artifacts/web/app/layout.tsx",
-                                lineNumber: 55,
+                                lineNumber: 54,
                                 columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/artifacts/web/app/layout.tsx",
-                            lineNumber: 54,
+                            lineNumber: 53,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/artifacts/web/app/layout.tsx",
-                        lineNumber: 53,
+                        lineNumber: 52,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/artifacts/web/app/layout.tsx",
-                    lineNumber: 52,
+                    lineNumber: 51,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/artifacts/web/app/layout.tsx",
-                lineNumber: 51,
+                lineNumber: 50,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/artifacts/web/app/layout.tsx",
-            lineNumber: 50,
+            lineNumber: 49,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/artifacts/web/app/layout.tsx",
-        lineNumber: 37,
+        lineNumber: 36,
         columnNumber: 5
     }, this);
 }

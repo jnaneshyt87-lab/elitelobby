@@ -15,7 +15,6 @@ import { CursorSpotlight } from "@/components/ui/cursor-spotlight";
 import { ClerkBannerRemover } from "@/components/ui/clerk-banner-remover";
 import { ParticleBackground } from "@/components/ui/particle-background";
 import { LoadingScreen } from "@/components/ui/loading-screen";
-import { LiquidRevealBg } from "@/components/ui/liquid-reveal-bg";
 
 export const metadata: Metadata = {
   title: "EliteLobby — Esports Tournament Platform",
@@ -53,9 +52,19 @@ export default function RootLayout({
             <WalletProvider>
               <RoomIdProvider>
                 <TickerProvider>
-                <LiquidRevealBg />
+                {/* Static blurred background image — zero JS cost */}
+                <div
+                  style={{
+                    position: "fixed", inset: 0, zIndex: -1,
+                    backgroundImage: "url(/bg-eye.jpg)",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    filter: "blur(50px) brightness(0.15) saturate(1.4)",
+                    transform: "scale(1.1)",
+                    pointerEvents: "none",
+                  }}
+                />
                 <div className="grid-bg" />
-                <div className="cursor-reveal-overlay" style={{ opacity: 0 }} />
                 <ParticleBackground />
                 <CursorSpotlight />
                 <LoadingScreen />

@@ -765,25 +765,9 @@ function RecentWinners() {
                 exit={{ opacity: 0, y: -20, scale: 0.97 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
                 className="glass-card rounded-2xl p-8 text-center relative overflow-hidden border border-yellow-500/20"
-                style={{ animation: "winner-glow-pulse 3s ease-in-out infinite" }}
               >
                 {/* Background gold glow */}
-                <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 30%, rgba(245,158,11,0.08) 0%, transparent 70%)" }} />
-
-                {/* Confetti dots */}
-                {[...Array(6)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="absolute w-1.5 h-1.5 rounded-full pointer-events-none"
-                    style={{
-                      left: `${15 + i * 14}%`,
-                      top: "10%",
-                      background: ["#f59e0b","#06b6d4","#a855f7","#ef4444","#22c55e","#f97316"][i],
-                      animation: `confetti-fall ${1.5 + i * 0.3}s ease-in ${i * 0.4}s infinite`,
-                      opacity: 0.7,
-                    }}
-                  />
-                ))}
+                <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 30%, rgba(245,158,11,0.07) 0%, transparent 70%)" }} />
 
                 {/* Trophy */}
                 <div className="relative z-10 mb-4">

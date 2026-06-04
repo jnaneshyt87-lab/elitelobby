@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///home/jnanesh/Downloads/EliteLobby/artifacts/web/app/template.tsx"],"sourcesContent":["\"use client\";\nimport { motion } from \"framer-motion\";\n\nexport default function Template({ children }: { children: React.ReactNode }) {\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 10 }}\n      animate={{ opacity: 1, y: 0 }}\n      exit={{ opacity: 0, y: -8 }}\n      transition={{\n        duration: 0.167,\n        ease: [0.25, 0.1, 0.25, 1.0],\n      }}\n      suppressHydrationWarning\n    >\n      {children}\n    </motion.div>\n  );\n}\n"],"names":[],"mappings":";;;;;AACA;AADA;;;AAGe,SAAS,SAAS,KAA2C;QAA3C,EAAE,QAAQ,EAAiC,GAA3C;IAC/B,qBACE,6TAAC,mVAAM,CAAC,GAAG;QACT,SAAS;YAAE,SAAS;YAAG,GAAG;QAAG;QAC7B,SAAS;YAAE,SAAS;YAAG,GAAG;QAAE;QAC5B,MAAM;YAAE,SAAS;YAAG,GAAG,CAAC;QAAE;QAC1B,YAAY;YACV,UAAU;YACV,MAAM;gBAAC;gBAAM;gBAAK;gBAAM;aAAI;QAC9B;QACA,wBAAwB;kBAEvB;;;;;;AAGP;KAfwB","debugId":null}}]
-}

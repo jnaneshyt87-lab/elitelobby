@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/project/artifacts/web/middleware.ts"],"sourcesContent":["import { clerkMiddleware, createRouteMatcher } from \"@clerk/nextjs/server\";\nimport { NextResponse } from \"next/server\";\n\nconst isProtectedRoute = createRouteMatcher([\n  \"/dashboard(.*)\",\n  \"/wallet(.*)\",\n  \"/profile-setup(.*)\",\n  \"/notifications(.*)\",\n]);\n\nexport default clerkMiddleware(async (auth, req) => {\n  if (isProtectedRoute(req)) {\n    const { userId } = await auth();\n    if (!userId) {\n      const loginUrl = new URL(\"/auth/login\", req.url);\n      loginUrl.searchParams.set(\"redirect_url\", req.url);\n      return NextResponse.redirect(loginUrl);\n    }\n  }\n});\n\nexport const config = {\n  matcher: [\n    \"/((?!_next/static|_next/image|favicon.ico|.*\\\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)\",\n  ],\n};\n"],"names":[],"mappings":";;;;;;AAAA;AAAA;AACA;AAAA;;;AAEA,MAAM,mBAAmB,IAAA,saAAkB,EAAC;IAC1C;IACA;IACA;IACA;CACD;uCAEc,IAAA,saAAe,EAAC,OAAO,MAAM;IAC1C,IAAI,iBAAiB,MAAM;QACzB,MAAM,EAAE,MAAM,EAAE,GAAG,MAAM;QACzB,IAAI,CAAC,QAAQ;YACX,MAAM,WAAW,IAAI,IAAI,eAAe,IAAI,GAAG;YAC/C,SAAS,YAAY,CAAC,GAAG,CAAC,gBAAgB,IAAI,GAAG;YACjD,OAAO,2UAAY,CAAC,QAAQ,CAAC;QAC/B;IACF;AACF;AAEO,MAAM,SAAS;IACpB,SAAS;QACP;KACD;AACH"}}]
-}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/artifacts/web/middleware.ts"],"sourcesContent":["import { clerkMiddleware } from \"@clerk/nextjs/server\";\n\nexport default clerkMiddleware();\n\nexport const config = {\n  matcher: [\n    \"/((?!_next/static|_next/image|favicon.ico|.*\\\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)\",\n  ],\n};\n"],"names":[],"mappings":";;;;;;AAAA;;uCAEe,IAAA,2ZAAe;AAEvB,MAAM,SAAS;IACpB,SAAS;QACP;KACD;AACH"}}]
+}

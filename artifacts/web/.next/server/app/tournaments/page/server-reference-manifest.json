@@ -1,0 +1,65 @@
+{
+  "node": {
+    "7f89e62e1e9188090b5097d812c5985a36066fcf47": {
+      "workers": {
+        "app/tournaments/page": {
+          "moduleId": "[project]/project/artifacts/web/.next-internal/server/app/tournaments/page/actions.js { ACTIONS_MODULE0 => \"[project]/project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/tournaments/page": "action-browser"
+      },
+      "exportedName": "createOrReadKeylessAction",
+      "filename": "project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+    },
+    "7f93a68093d38659560db0cdc5394d5f0244a4bf01": {
+      "workers": {
+        "app/tournaments/page": {
+          "moduleId": "[project]/project/artifacts/web/.next-internal/server/app/tournaments/page/actions.js { ACTIONS_MODULE0 => \"[project]/project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/tournaments/page": "action-browser"
+      },
+      "exportedName": "deleteKeylessAction",
+      "filename": "project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+    },
+    "7ff4d65b47a4f358e0434085f3a9ff2e49b716b360": {
+      "workers": {
+        "app/tournaments/page": {
+          "moduleId": "[project]/project/artifacts/web/.next-internal/server/app/tournaments/page/actions.js { ACTIONS_MODULE0 => \"[project]/project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "layer": {
+        "app/tournaments/page": "action-browser"
+      },
+      "exportedName": "syncKeylessConfigAction",
+      "filename": "project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+    },
+    "7f42c7ea87739a054896a0f21dae0d0112fcf3672c": {
+      "workers": {
+        "app/tournaments/page": {
+          "moduleId": "[project]/project/artifacts/web/.next-internal/server/app/tournaments/page/actions.js { ACTIONS_MODULE0 => \"[project]/project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        }
+      },
+      "layer": {
+        "app/tournaments/page": "action-browser"
+      },
+      "exportedName": "invalidateCacheAction",
+      "filename": "project/node_modules/.pnpm/@clerk+nextjs@7.4.0_next@15.5.18_react-dom@19.1.0_react@19.1.0__react@19.1.0__react-dom_410bba7e288442c0eec23071dc87d257/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+    }
+  },
+  "edge": {}
+}

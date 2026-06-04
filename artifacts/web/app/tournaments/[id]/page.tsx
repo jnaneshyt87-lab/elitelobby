@@ -149,7 +149,7 @@ export default function TournamentDetailPage() {
     if (!canAfford(effectiveEntryFee)) return;
     setRegistering(true);
     await new Promise(r => setTimeout(r, 1200));
-    const label = `${tournament.title} — ${CS_TIME_SLOTS[selectedSlot].label} slot`;
+const label = `${tournament?.title ?? "Tournament"} — ${CS_TIME_SLOTS[selectedSlot].label} slot`;
     const success = deductFee(effectiveEntryFee, label);
     if (success) setRegistered(true);
     setRegistering(false);

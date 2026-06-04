@@ -2,8 +2,8 @@
     script: typeof document === "object" ? document.currentScript : undefined,
     chunks: [
   "static/chunks/artifacts_web_app_globals_45382b41.css",
-  "static/chunks/b9b09_@clerk_nextjs_dist_esm_app-router_70029e59._.js",
-  "static/chunks/artifacts_web_eeed2ad7._.js",
+  "static/chunks/b9b09_@clerk_nextjs_dist_esm_app-router_df8def0a._.js",
+  "static/chunks/artifacts_web_3c2acd2b._.js",
   "static/chunks/89522_next_63408258._.js",
   "static/chunks/35b79_tailwind-merge_dist_bundle-mjs_mjs_8fe727c0._.js",
   "static/chunks/35311_motion-dom_dist_es_9fdc1774._.js",

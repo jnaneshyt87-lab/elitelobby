@@ -81,13 +81,16 @@ body {
 
 /* ─── GPU compositing hints ─────────────────────── */
 .glass,
-.glass-card,
 .glass-bright,
 .bottom-nav-bar,
-[data-framer-motion],
 .animate-float {
   will-change: transform;
   transform: translateZ(0);
+}
+
+/* glass-card transform handled by Framer Motion spring */
+.glass-card {
+  will-change: transform;
 }
 
 /* ─── Smooth focus rings ─────────────────────────── */

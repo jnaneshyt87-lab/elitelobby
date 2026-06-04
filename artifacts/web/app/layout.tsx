@@ -11,6 +11,7 @@ import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import { LiveTicker } from "@/components/ui/live-ticker";
 import { TickerProvider } from "@/lib/ticker-context";
 import { BottomNav } from "@/components/layout/bottom-nav";
+import { CursorSpotlight } from "@/components/ui/cursor-spotlight";
 
 export const metadata: Metadata = {
   title: "EliteLobby — Esports Tournament Platform",
@@ -42,6 +43,7 @@ export default function RootLayout({
               <RoomIdProvider>
                 <TickerProvider>
                 <div className="grid-bg" />
+                <CursorSpotlight />
                 <LiveTicker />
                 <Navbar />
                 <main className="relative z-10 min-h-screen pb-16 md:pb-0">

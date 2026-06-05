@@ -16,24 +16,20 @@ import { ClerkBannerRemover } from "@/components/ui/clerk-banner-remover";
 import { ParticleBackground } from "@/components/ui/particle-background";
 import { LoadingScreen } from "@/components/ui/loading-screen";
 
-export const metadata: Metadata = {
-  title: "EliteLobby — Esports Tournament Platform",
-  description: "Join paid tournaments, compete against the best, and win real cash prizes. India's #1 esports tournament platform.",
-  keywords: ["esports", "tournament", "BGMI", "Free Fire", "Valorant", "online gaming", "cash prizes"],
-  openGraph: {
-    title: "EliteLobby",
-    description: "Compete. Win. Dominate.",
-    type: "website",
-  },
-};
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+
+  console.log(
+    "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY:",
+    process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+  );
+
   return (
     <ClerkProvider
+  publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
       signInUrl="/auth/login"
       signUpUrl="/auth/signup"
       signInFallbackRedirectUrl="/dashboard"
